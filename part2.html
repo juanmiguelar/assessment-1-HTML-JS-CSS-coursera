@@ -4,6 +4,37 @@
     <meta charset="utf-8">
     <meta name="author" content="Juan Miguel Arias Mejias">
     <title>Assesment #1 - Juan Miguel Arias Mejias</title>
+
+    <style media="screen">
+      fieldset{
+        background: lightyellow;
+        border: 10px solid yellow;
+        margin-bottom: 10px;
+        width: 720px;
+      }
+
+      label{
+        width: 180px;
+        display: inline-block;
+        text-align: right;
+        vertical-align: top;
+
+      }
+
+      .radiocheck-label{
+        width: auto;
+      }
+
+      span{
+        text-align: center;
+      }
+
+      textarea{
+        width: 360px;
+        height: 50px;
+      }
+    </style>
+
   </head>
   <body>
     <h1>Please Enter Your Details For Our Dating Website!</h1>
@@ -29,9 +60,9 @@
 
         <label for="gender">Gender:</label>
         <input type="radio" name="gender" id="male" required>
-        <label for="male">Male</label>
+        <label for="male" class="radiocheck-label">Male</label>
         <input type="radio" name="gender" id="female" required>
-        <label for="female">Female</label><br>
+        <label for="female" class="radiocheck-label">Female</label><br>
 
         <label for="age">Age:</label>
         <input type="number" id="age" name="age" value="18"><br>
@@ -61,10 +92,14 @@
         <legend>Your Indicators</legend>
 
         <label for="height">Height:</label>
-        Short <input type="range" name="height" id="height" min="0" max="100"> Tall <br>
+        <span>Short</span>
+        <input type="range" name="height" id="height" min="0" max="100">
+        <span>Tall</span><br>
 
         <label for="salary">Salary:</label>
-        Poor <input type="range" name="salary" id="salary" min="0" max="100"> Rich <br>
+        <span>Poor</span>
+        <input type="range" name="salary" id="salary" min="0" max="100">
+        <span>Rich</span><br>
       </fieldset>
 
       <!-- Your Contact Information -->
@@ -80,13 +115,13 @@
         <label for="address">Address: </label>
         <textarea name="address" id="address" rows="2" cols="20"></textarea><br>
 
-        <label for="contact">Method to contact you: </label>
+        <label for="contact" class="radiocheck-label">Method to contact you: </label>
         <input type="checkbox" name="contact" id="email">
-        <label for="email">Email</label>
+        <label for="email" class="radiocheck-label">Email</label>
         <input type="checkbox" name="contact" id="whatsapp">
-        <label for="whatsapp">Whatsapp</label>
+        <label for="whatsapp" class="radiocheck-label">Whatsapp</label>
         <input type="checkbox" name="contact" id="chat">
-        <label for="chat">In-app chat</label>
+        <label for="chat" class="radiocheck-label">In-app chat</label>
 
       </fieldset>
 
